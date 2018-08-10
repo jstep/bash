@@ -13,6 +13,9 @@ alias ls='ls -GFh'
 alias gut='git '
 alias gpom='git pull origin master'
 
+# Pring external IP address
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 # Use the arrow keys to *search* through history rather than scroll up/down
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
@@ -55,5 +58,5 @@ __prompt_command__ () {
 # added by Anaconda2 5.0.0 installer
 export PATH="/Users/James/anaconda2/bin:$PATH"
 
-. ~/.bash_prompt
+. ~/.prompt
 
